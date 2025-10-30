@@ -1,0 +1,31 @@
+:root{
+    --primary-color: #262525;
+    --secondary-color: #363636;
+    --tertiary-color: #FFB84E;
+    --font-color: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: var(--secondary-color);
+
+}
+
+.login-button{
+    border: 0;
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 2em;
+}
