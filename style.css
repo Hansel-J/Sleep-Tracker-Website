@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #262525;
-    --secondary-color: #363636;
-    --tertiary-color: #FFB84E;
-    --font-color: #FFFFFF;
+    --primary-color: hsl(0, 1%, 15%);
+    --secondary-color: hsl(0, 0%, 21%);
+    --tertiary-color: hsl(36, 100%, 65%);
+    --font-color: hsl(0, 0%, 100%);
 }
 
 body{
@@ -10,15 +10,28 @@ body{
     padding: 0;
     background-color: var(--primary-color);
     color: var(--font-color);
+    font-family: "Inter";
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5em;
+    padding: 0 1em 0 1em;
+    height: 10vh;
     background-color: var(--secondary-color);
 
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.link-style{
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 .login-button{
@@ -26,6 +39,12 @@ body{
     background-color: var(--tertiary-color);
     color: var(--font-color);
     font-size: 1em;
+    width: 5em;
     padding: 0.5em;
     border-radius: 2em;
+}
+
+.banner{
+    width: 100%;
+    height: 90vh;
 }
