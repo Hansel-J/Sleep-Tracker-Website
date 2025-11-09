@@ -67,6 +67,59 @@ body{
     padding-top: 1em;
 }
 
+.library-section{
+    position: relative;
+    overflow: visible;
+}
+
+.library-content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.library-icon{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.8rem;
+    background-image: url('Assets/rib_eye_steak_au_poivre_with_roasted_veggies.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--font-color);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    font-size: 1.1rem;
+    border: 2px solid rgba(255,255,255,0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.library-icon::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.32);
+    pointer-events: none;
+}
+
+.library-icon:hover, .library-icon:focus{
+    transform: translateY(-4px);
+    transition: transform 180ms ease;
+    box-shadow: 0 12px 22px rgba(0,0,0,0.45);
+}
+
 
 /* .wellness-section{
 }
