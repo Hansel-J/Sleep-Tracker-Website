@@ -13,6 +13,10 @@ body{
     font-family: "Inter";
 }
 
+.no-deco{
+    text-decoration: none;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -77,14 +81,48 @@ body{
 
 .wellness-section, .library-section, .progress-section{
     display: flex;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column;
+    padding: 0em 1em 0em 1em;
+    width: calc(100% - 2em);
     padding-top: 1em;
+}
+
+.divider-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1em;
+}
+
+.mealplan, .sleeptracker{
+    padding: 1em;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
 }
 
 .library-section{
     position: relative;
     overflow: visible;
+}
+
+.library-divider{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.libraryBlock{
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 3em;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.libraryBlock:hover{
+    margin-top: -5px;
+    border: 2px solid var(--tertiary-color);
 }
 
 .library-content{
@@ -97,7 +135,7 @@ body{
     gap: 1rem;
     width: 100%;
     height: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .library-icon{
@@ -134,8 +172,6 @@ body{
     transition: transform 180ms ease;
     box-shadow: 0 12px 22px rgba(0,0,0,0.45);
 }
-
-
 /* .wellness-section{
 }
 
@@ -146,3 +182,15 @@ body{
 .progress-section{
 
 } */
+
+.progress-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.progress-calendar, .workout-calendar, .before-and-after, .achievements, .exercise-graph{
+    padding: 3em;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+}
