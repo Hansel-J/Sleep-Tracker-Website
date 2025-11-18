@@ -3,6 +3,7 @@
     --secondary-color: hsl(0, 0%, 21%);
     --tertiary-color: hsl(36, 100%, 65%);
     --font-color: hsl(0, 0%, 100%);
+    --secondary-font-color: hsl(0, 0%, 60%);
 }
 
 body{
@@ -258,4 +259,33 @@ body{
     padding: 3em;
     background-color: var(--secondary-color);
     border-radius: 25px;
+}
+
+.summary-bracket{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+    color: var(--tertiary-color);
+}
+
+.summary-grid{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.summary-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--secondary-font-color);
+}
+
+.summary-important{
+    font-size: 2em;
+    color: var(--tertiary-color);
 }
