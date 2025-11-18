@@ -22,7 +22,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 1em 0 1em;
-    height: 10vh;
+    min-height: 10vh;
     background-color: var(--secondary-color);
 
 }
@@ -76,7 +76,7 @@ body{
     margin: 0;
     padding: 0;
     z-index: 10;
-    height: 80vh;
+    height: 500px;
 }
 
 .wellness-section, .library-section, .progress-section{
@@ -99,6 +99,54 @@ body{
     border-radius: 25px;
     background-color: var(--secondary-color);
 }
+
+.mealplan-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mealplan-graph{
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+}
+
+.today-meals{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    gap: 1em;
+    font-weight: 800;
+}
+
+.today-meals-block{
+    border-radius: 25px;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    background-color: var(--secondary-color);
+}
+
+.meal-graphic{
+    height: 3em;
+    aspect-ratio: 1/1;
+}
+
+.meal, .meal-time-data{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.meal-time-data{
+    font-weight: 100;
+    padding-top: 0.5em;
+    font-size: 0.9em;
+}
+
 
 .library-section{
     position: relative;
@@ -189,7 +237,7 @@ body{
     gap: 1em;
 }
 
-.progress-calendar, .workout-calendar, .before-and-after, .achievements, .exercise-graph{
+.progress-calendar, .workout-calendar, .before-and-after, .achievements, .exercise-graphs{
     padding: 3em;
     background-color: var(--secondary-color);
     border-radius: 25px;
