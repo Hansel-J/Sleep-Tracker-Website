@@ -55,6 +55,10 @@ body{
     background-size: cover;
 }
 
+.bannerTitle{
+    font-size: 3em;
+}
+
 .loginfirst{
     display: flex;
     justify-content: center;
