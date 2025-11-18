@@ -94,25 +94,37 @@ body{
     gap: 1em;
 }
 
+.divider-2-title{
+    font-weight: 900;
+}
+
 .mealplan, .sleeptracker{
     padding: 1em;
     border-radius: 25px;
     background-color: var(--secondary-color);
 }
 
-.mealplan-content{
+.mealplan{
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0) 70%, rgba(157, 206, 255, 0.5) 90%,  rgba(146, 163, 253, 0.5));
+}
+
+.sleeptracker{
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0) 70%, rgba(238, 164, 206, 0.5) 90%,  rgba(197, 139, 242, 0.5));
+}
+
+.mealplan-content, .sleeptracker-content{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.mealplan-graph{
+.mealplan-graph, .sleeptracker-graph{
     padding: 1em;
     background-color: var(--primary-color);
     border-radius: 25px;
 }
 
-.today-meals{
+.today-meals, .today-schedule{
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -122,7 +134,7 @@ body{
     font-weight: 800;
 }
 
-.today-meals-block{
+.today-meals-block, .today-schedule-block{
     border-radius: 25px;
     padding: 1em;
     display: flex;
@@ -130,23 +142,28 @@ body{
     background-color: var(--secondary-color);
 }
 
-.meal-graphic{
+.meal-graphic, .alarm-graphic{
     height: 3em;
     aspect-ratio: 1/1;
 }
 
-.meal, .meal-time-data{
+.meal, .meal-time-data, .sleep, .sleep-time-data{
     padding: 0;
     margin: 0;
     font-size: 1.2em;
 }
 
-.meal-time-data{
+.meal-time-data, .sleep-time-data{
     font-weight: 100;
     padding-top: 0.5em;
     font-size: 0.9em;
 }
 
+.mysterious-box, .daily-sleep-schedule{
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+}
 
 .library-section{
     position: relative;
