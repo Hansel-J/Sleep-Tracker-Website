@@ -55,6 +55,15 @@ body{
     background-size: cover;
 }
 
+.loginfirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: calc(100% - 2em);
+    height: calc(90vh - 2em);
+}
+
 .phone{
     margin: 0;
     padding: 0;
