@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
     <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
@@ -29,16 +27,15 @@
         <div class="welcome-text">
             <h2>Login</h2>
         </div>
-        
-        <form action="#" method="POST">
+        <form id="login-form">
             <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" name="email" required>
             </div>
             
             <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" name="password" required>
             </div>
             
             <a href="#" class="forgot-password">Forget Password?</a>
@@ -53,12 +50,11 @@
             </div>
             
             <button type="submit" class="next-btn">
-                <a href="../index_loggedIn.html">
-                    Next <i class="fas fa-arrow-right"></i>
-                </a>
+                Next <i class="fas fa-arrow-right"></i>
             </button>
         </form>
     </main>
 
+    <script type="module" src="script.js"></script>
 </body>
 </html>
