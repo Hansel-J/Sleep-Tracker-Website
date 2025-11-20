@@ -16,6 +16,7 @@ body{
 
 .no-deco{
     text-decoration: none;
+    color: var(--font-color);
 }
 
 .navbar{
@@ -98,8 +99,17 @@ body{
     gap: 1em;
 }
 
+.wellness-block-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 900;
+    padding: 1em 0em 1em 0em;
+}
+
 .divider-2-title{
     font-weight: 900;
+    margin: 0;
 }
 
 .mealplan, .sleeptracker{
